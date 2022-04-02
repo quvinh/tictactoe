@@ -24,10 +24,10 @@ $(function () {
     } else {
       // Show the message for the loser
       if (myTurn) {
-        $("#messages").text("Game over. You lost.");
+        $("#messages").text("Kết thúc. Thua rồi :)).");
         // Show the message for the winner
       } else {
-        $("#messages").text("Game over. You won!");
+        $("#messages").text("WIN. Game dễ!");
       }
       // Disable the board
       $(".board button").attr("disabled", true);
@@ -45,7 +45,7 @@ $(function () {
 
   // Disable the board if the opponent leaves
   socket.on("opponent.left", function () {
-    $("#messages").text("Your opponent left the game.");
+    $("#messages").text("Người chơi đã thoát.");
     $(".board button").attr("disabled", true);
   });
 });
@@ -109,11 +109,11 @@ function isGameOver() {
 function renderTurnMessage() {
   // Disable the board if it is the opponents turn
   if (!myTurn) {
-    $("#messages").text("Your opponent's turn");
+    $("#messages").text("Lượt của đối thủ");
     $(".board button").attr("disabled", true);
     // Enable the board if it is your turn
   } else {
-    $("#messages").text("Your turn.");
+    $("#messages").text("Lượt của bạn");
     $(".board button").removeAttr("disabled");
   }
 }
