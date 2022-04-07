@@ -1,12 +1,13 @@
 body {
     text-align: center;
-    font-family: "Sofia", sans-serif;
-   }
-   .board {
+}
+
+.board {
     margin: auto;
     width: 350px;
-   }
-   .board button {
+}
+
+.board button {
     height: 100px;
     width: 100px;
     margin: 0px;
@@ -15,12 +16,13 @@ body {
     margin-right: 10px;
     margin-bottom: 10px;
     font-size: 3em
-   }
+}
 
-   .header {
-    padding: 60px;
+.header {
+    padding: 40px;
     text-align: center;
     background: #39a4d6;
     color: white;
-    font-size: 30px;
-  }
+    font-size: 24px;
+    font-family: "Sofia", sans-serif;
+}
