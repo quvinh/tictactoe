@@ -1,7 +1,7 @@
 var express = require('express')
 var app = express()
 app.use(express.static('public'))
-const port = process.env.PORT
+const port = process.env.PORT || 1234 //Thêm port để chạy trên localhost
 var http = require('http').createServer(app);
 var io = require('socket.io')(http);
 
